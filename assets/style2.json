@@ -6,15 +6,15 @@
         "mapbox:type": "template"
     },
     "center": [
-        -102.42452995955529,
-        56.39351123571606
+        -123.10501901726195,
+        44.49514636691222
     ],
-    "zoom": 2.045376639769242,
+    "zoom": 8.572576044784045,
     "bearing": 0,
     "pitch": 0,
     "sources": {
-        "mapbox": {
-            "url": "mapbox://mapbox.mapbox-streets-v7",
+        "composite": {
+            "url": "mapbox://mapbox.mapbox-streets-v7,mapbox.mapbox-terrain-v2",
             "type": "vector"
         }
     },
@@ -54,9 +54,23 @@
             }
         },
         {
+            "id": "hillshade",
+            "type": "fill",
+            "metadata": {},
+            "source": "composite",
+            "source-layer": "hillshade",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsla(253, 7%, 25%, 0.07)",
+                "fill-opacity": 1
+            }
+        },
+        {
             "id": "landuse_overlay_national_park",
             "type": "fill",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "landuse_overlay",
             "filter": [
                 "==",
@@ -72,7 +86,7 @@
         {
             "id": "landuse_park",
             "type": "fill",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "landuse",
             "filter": [
                 "==",
@@ -86,7 +100,7 @@
         {
             "id": "waterway",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "waterway",
             "filter": [
                 "all",
@@ -138,7 +152,7 @@
         {
             "id": "water",
             "type": "fill",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "water",
             "paint": {
                 "fill-color": "#3E3C45",
@@ -160,7 +174,7 @@
         {
             "id": "building",
             "type": "fill",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "building",
             "paint": {
                 "fill-color": "#828493"
@@ -169,7 +183,7 @@
         {
             "id": "tunnel_minor",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -227,7 +241,7 @@
         {
             "id": "tunnel_major",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -282,7 +296,7 @@
         {
             "id": "road_minor",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -337,7 +351,7 @@
         {
             "id": "road_major",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -389,7 +403,7 @@
         {
             "id": "bridge_minor case",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -456,7 +470,7 @@
         {
             "id": "bridge_major case",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -520,7 +534,7 @@
         {
             "id": "bridge_minor",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -574,7 +588,7 @@
         {
             "id": "bridge_major",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road",
             "filter": [
                 "all",
@@ -625,7 +639,7 @@
         {
             "id": "admin_country",
             "type": "line",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "admin",
             "filter": [
                 "all",
@@ -672,7 +686,7 @@
         {
             "id": "poi_label",
             "type": "symbol",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "poi_label",
             "minzoom": 5,
             "filter": [
@@ -722,7 +736,7 @@
         {
             "id": "road_major_label",
             "type": "symbol",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "road_label",
             "filter": [
                 "all",
@@ -773,7 +787,7 @@
         {
             "id": "place_label_other",
             "type": "symbol",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "place_label",
             "minzoom": 8,
             "filter": [
@@ -824,7 +838,7 @@
         {
             "id": "place_label_city",
             "type": "symbol",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "place_label",
             "maxzoom": 16,
             "filter": [
@@ -870,7 +884,7 @@
         {
             "id": "country_label",
             "type": "symbol",
-            "source": "mapbox",
+            "source": "composite",
             "source-layer": "country_label",
             "maxzoom": 12,
             "filter": [
@@ -908,7 +922,7 @@
     ],
     "created": "2017-05-17T01:13:51.696Z",
     "id": "cj2sankqs00092slh3crt9odk",
-    "modified": "2017-05-17T04:49:23.407Z",
+    "modified": "2017-05-17T05:57:06.884Z",
     "owner": "cosgrovc",
     "visibility": "private",
     "draft": false

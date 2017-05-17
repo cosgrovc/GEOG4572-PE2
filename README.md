@@ -20,4 +20,4 @@ This basemap was an exercise in colour paletting really - I used https://www.can
 
 The above photo produced a palette of #CCCEE2 #B4ABC2 #3E3C45 #828493 #A5A7B8
 
-The colours from the palette I tried to apply carefully and appropriately to different features of the Mapbox Streets template. I was really inspired by the understated yet effective New York Times mapping and hence went for a muted scheme
+The colours from the palette I tried to apply carefully and appropriately to different features of the Mapbox Streets template. I was really inspired by the understated yet effective New York Times mapping and hence went for a muted scheme. Additionally, I've added in the hillshade feature at a very low opaqueness to give a sense of terrain. I hope to use this map to show realtime visual data a la Bo's New York noise reports.

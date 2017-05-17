@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./img/IMG_0053.jpg
----
-
 # GEOG4572-PE2
 
 > **Basemap Exercise Titles**
@@ -20,7 +16,7 @@ I designed *Wrangells 1* to be a simple map for showing location of my field wor
 
 This basemap was an exercise in colour paletting really - I used https://www.canva.com/color-palette/ and uploaded the image below to get a palette inspired by a very atmospheric day in the mountains. I wanted something elegant and clean, and this notion followed into my selection of Merriweather fonts.
 
-![IMG_0053](/Users/chris/workspace/geovis_assignments/basemap2/img/IMG_0053.jpg)
+![IMG_0053](/img/IMG_0053.jpg)
 
 The above photo produced a palette of #CCCEE2 #B4ABC2 #3E3C45 #828493 #A5A7B8
 
